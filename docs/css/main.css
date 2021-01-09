@@ -1,0 +1,237 @@
+@font-face {
+  font-family: Baskervville;
+  src: url('../fonts/Baskervville/Baskervville-Regular.ttf');
+}
+
+@font-face {
+  font-family: Baskervville;
+  src: url('../fonts/Baskervville/Baskervville-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: BaskervilleBold;
+  src: url('../fonts/Baskerville Bold/Baskerville Bold.otf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url('../fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url('../fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf');
+  font-style: italic;
+}
+
+body:after{
+      content:"";
+      position:fixed; /* stretch a fixed position to the whole screen */
+      top:0;
+      height:100vh; /* fix for mobile browser address bar appearing disappearing */
+      left:0;
+      right:0;
+      z-index:-1; /* needed to keep in the background */
+      background: url(../img/background.jpg) center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+/*body {
+
+
+  background: url('../img/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+
+  font-family: Raleway;
+
+  line-height: 1;
+
+}*/
+
+html {
+      scroll-behavior: smooth;
+}
+
+.panel-container {
+
+    margin: auto;
+    max-width: 600px;
+
+}
+
+.container-fluid {
+   max-width:100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.fund-text {
+    font-family: Baskervville;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-section-header {
+    font-family: Baskervville;
+}
+
+.person-name {
+    font-family: Baskervville;
+}
+.person-title {
+
+}
+
+.person-desc {
+
+}
+
+.main-title {
+    font-size: 60px;
+
+}
+
+/* classes for hover overlays*/
+
+.hover-holder {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.hover-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hover-text {
+  color: #000000;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #f7f7f7; /*#343a40;*/
+}
+
+.hover-holder:hover .hover-overlay {
+  opacity: 1;
+}
+
+/* Sundry positioning classes */
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.vertical-bottom {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+/* Publication stuff */
+.publication-link {
+
+}
+
+.publication-main-author {
+    font-family: BaskervilleBold;
+}
+
+.publication-authors {
+    font-family: Baskervville;
+}
+
+.publication-year {
+    font-size: 120%;
+    margin: auto;
+}
+
+.publication-title{
+
+}
+
+.publication-journal {
+    font-size: 110%;
+    font-style: italic;
+}
+
+.publication-meta {
+    color: gray;
+}
+
+.publication-year-box {
+    display: flex;
+
+}
+.publication-cite-box {
+    text-align: left;
+}
+
+blockquote {
+    font-style: italic;
+    padding: 0.25em 24px;
+    position: relative;
+    color: #383838;
+    border-left: 2px solid;
+    
+}
+
+h1 {
+    font-family: Baskervville;
+}
+h2 {
+    font-family: Baskervville;
+}
+h3 {
+    font-family: Baskervville;
+}
+h4 {
+    font-family: Baskervville;
+}
