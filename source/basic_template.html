@@ -10,13 +10,27 @@
     </head>
 
     <body>
-        <!-- Big empty container so the first thing people see on the page is
-             the background image -->
-        <div class="container-fluid bg-transparent" style="height:85vh;">
-        </div>
 
-        <div class="container-fluid" id="main-container">
-            {{ session.content }}
+        <div class="container-fluid bg-transparent">
+            <!-- header container -->
+            <div class="container text-center bg-transparent" id="top">
+
+                <br/>
+
+                <h1 class="main-title" style="color:white">Thinking</h1>
+                <h3 style="color:white">Respond, don't react</h3>
+
+            </div>
+    
+            <!-- Big empty container so the first thing people see on the page is
+                 the background image -->
+            <div class="container-fluid bg-transparent" style="height:85vh;">
+            </div>
+
+            <div class="container-fluid" id="main-container">
+                {{ session.content }}
+            </div>
+        
         </div>
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
